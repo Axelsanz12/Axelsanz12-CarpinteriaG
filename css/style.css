@@ -2,19 +2,27 @@
 
 body {
     background-color: rgb(0, 0, 0);
-    color: rgb(14, 13, 13);
+    color: rgb(8, 7, 7);
 }
 /* estamos con el nav */
 .container-fluid {
-    background-color: rgb(255, 255, 255);
-    color: black;
+    background-color: rgb(247, 245, 245);
+    color: rgb(2, 1, 1);
     flex-wrap: wrap;
+    padding: 1%;
+}
+
+.container-fluid a {
+    color: rgb(7, 1, 1);
+    flex-wrap: wrap;
+    padding: 0%;
+    
 }
 
 
 /* Ajustar la altura del carrusel */
 .carousel {
-    background-color: rgb(2, 5, 4);
+    background-color: rgb(253, 253, 253);
     height: auto; /* Altura automática según el contenido */
     max-height: 50%; /* Máxima altura que deseas (puedes ajustar este valor) */
 }
@@ -25,11 +33,20 @@ body {
     width: 80%; /* Mantén el ancho completo */
     max-height: 100%; /* Limita la altura máxima para que no sean gigantes */
     height: auto /* Deja que la altura se ajuste proporcionalmente */
+    
+}
+
+.nav-item {
+    padding: 0px;
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    color: rgb(251, 251, 252);
 }
 
 .nav-item:hover {
     background-color:rgb(149, 187, 204);
-   
+   padding: 1%;
 }
 
 .iconos {
@@ -66,7 +83,7 @@ body {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr ); /* Cuatro columnas */
+    grid-template-columns: repeat(2, 1fr ); /* Cuatro columnas */
     gap: 10px; /* Espacio entre las imágenes */
     margin: 10px;
 }
@@ -90,6 +107,7 @@ body {
 }
 
 .description {
+    flex-wrap: wrap;
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
     top: 50%;
@@ -115,8 +133,29 @@ video {
     display:grid; /* Elimina cualquier espacio no deseado alrededor del video */
 }
 
+    
+
 h1 {
     font-size: 15px;
     width: 100%;
     text-align:end;
+}
+
+.contact a {
+    color: #007bff;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
