@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Espejo redondo",
+        "name": "Espejo redondo ",
         "price": 247460,
         "image": "../imgtienda/espejo.png"
     },
@@ -64,6 +64,7 @@
         "name": "Plato Postre",
         "price": 247460,
         "image": "../imgtienda/postre1.png"
+        
     }
     
   ]

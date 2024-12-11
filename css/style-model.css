@@ -83,16 +83,24 @@ body {
     font-size: 14px;
     color: #999;
 }
-
-#carrito:hover{
-  margin-top: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+#carrito {
+    position: fixed;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde el borde derecho */
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
 }
 
 #cartItems {
-  max-height: 300px;
-  overflow-y: auto;
+    max-height: 300px;
+    overflow-y: auto; /* Permite desplazamiento si el carrito es muy largo */
+}
+
+#clearCart, #proceedToPayment {
+    margin-top: 10px;
 }
 
 

@@ -136,7 +136,8 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(products => {
                 productContainer.innerHTML = '';  // Limpiar cualquier contenido previo
                 products.forEach(product => {
-                    const productCard = document.createElement('div');
+                    const productCard = document.createElement('div()');
+
                     productCard.classList.add('col');
                     productCard.innerHTML = `
                         <div class="product-card">
@@ -163,11 +164,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-productCard.innerHTML = `
-    <div class="product-card">
-        <img src="${product.image}" alt="${product.name}" class="img-fluid">
-        <p class="product-title">${product.name}</p>
-        <p class="product-price">$${product.price}</p>
-        <button class="btn btn-primary">Añadir al carrito</button>
-    </div>
-`;
